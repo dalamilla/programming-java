@@ -25,3 +25,20 @@ replay_pid*
 
 target
 dependency-reduced-pom.xml
+
+# micronaut
+Thumbs.db
+.DS_Store
+.gradle
+build/
+target/
+out/
+.micronaut/
+.idea
+*.iml
+*.ipr
+*.iws
+.project
+.settings
+.classpath
+.factorypath
