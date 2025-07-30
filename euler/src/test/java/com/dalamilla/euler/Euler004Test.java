@@ -10,15 +10,15 @@ import org.junit.jupiter.params.provider.CsvSource;
  */
 public class Euler004Test {
 
-    /**
-     * Test solution.
-     */
-    @ParameterizedTest
-    @CsvSource({
-        "2, 9009",
-        "3, 906609"
-    })
-    public void test(int input, int expected) {
-        assertTrue(Euler004.solution(input) == expected);
-    }
+  /**
+   * Test solution.
+   */
+  @ParameterizedTest
+  @CsvSource({
+      "2, 9009",
+      "3, 906609"
+  })
+  public void test(int input, int expected) {
+    assertTrue(Euler004.solution(input) == expected);
+  }
 }

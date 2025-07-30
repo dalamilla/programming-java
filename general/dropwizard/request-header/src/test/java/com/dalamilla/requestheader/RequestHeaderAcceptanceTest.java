@@ -1,20 +1,22 @@
 package com.dalamilla.requestheader;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 import io.dropwizard.testing.ResourceHelpers;
 import io.dropwizard.testing.junit5.DropwizardAppExtension;
 import io.dropwizard.testing.junit5.DropwizardExtensionsSupport;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.core.Response;
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 @ExtendWith(DropwizardExtensionsSupport.class)
 class RequestHeaderAcceptanceTest {
 
-  private static DropwizardAppExtension<RequestHeaderConfiguration> EXT = new DropwizardAppExtension<>(
-      RequestHeaderApplication.class,
-      ResourceHelpers.resourceFilePath("yaml/config.yaml"));
+  private static DropwizardAppExtension<RequestHeaderConfiguration> EXT
+      = new DropwizardAppExtension<>(
+          RequestHeaderApplication.class,
+          ResourceHelpers.resourceFilePath("yaml/config.yaml"));
 
   @Test
   void apiWhoamiGet() {

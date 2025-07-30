@@ -1,13 +1,16 @@
 package com.dalamilla.requestheader.model;
 
-import io.micronaut.serde.ObjectMapper;
-import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
-import org.junit.jupiter.api.Test;
-import java.io.IOException;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import io.micronaut.serde.ObjectMapper;
+import io.micronaut.test.extensions.junit5.annotation.MicronautTest;
+import java.io.IOException;
+import org.junit.jupiter.api.Test;
+
+/**
+ * Tests for Whoami.
+ */
 @MicronautTest
 public class WhoamiTest {
   @Test

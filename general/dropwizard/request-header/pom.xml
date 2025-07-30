@@ -209,6 +209,7 @@
                     <failOnViolation>true</failOnViolation>
                     <violationSeverity>warning</violationSeverity>
                     <linkXRef>false</linkXRef>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
                 </configuration>
                 <executions>
                     <execution>
@@ -242,7 +243,7 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
                 <version>${checkstyle-maven-plugin.version}</version>
                 <configuration>
-                <configLocation>config/checkstyle.xml</configLocation>
+                    <configLocation>config/checkstyle.xml</configLocation>
                 </configuration>
                 <reportSets>
                 <reportSet>
